@@ -1,10 +1,11 @@
 package ru.netology.service;
 
+import org.junit.Test;
 import org.testng.Assert;
 
 public class CashbackHackServiceTest {
 
-    @org.testng.annotations.Test
+    @Test
     public void calculateServiceInTheBoundary() {
         CashbackHackService service = new CashbackHackService();
 
@@ -16,7 +17,7 @@ public class CashbackHackServiceTest {
         Assert.assertEquals(actual, expected);
     }
 
-    @org.testng.annotations.Test
+    @Test
     public void calculateServiceNotInTheBoundary() {
         CashbackHackService service = new CashbackHackService();
 
@@ -28,7 +29,7 @@ public class CashbackHackServiceTest {
         Assert.assertEquals(actual, expected);
     }
 
-    @org.testng.annotations.Test
+    @Test
     public void calculateServiceInTheGradle() {
         CashbackHackService service = new CashbackHackService();
 
